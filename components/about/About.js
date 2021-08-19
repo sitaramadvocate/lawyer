@@ -5,7 +5,7 @@ const About=()=>{
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-md-6">
-                      <Image src="/assets/images/banners/about.webp" width="450"height="400"/>
+                      <Image src="/assets/images/banners/about.webp" alt="about" width="450"height="400"/>
                     </div>
                     <div className="col-md-6">
                     <div className="pl-0 pl-lg-3 pl-xl-5">   

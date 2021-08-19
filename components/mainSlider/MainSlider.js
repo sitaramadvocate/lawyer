@@ -58,13 +58,13 @@ const MainSlider=()=>{
         <div className="home-slider">
           <Slider {...settings}>
           <div className="slide-container">
-            <Image className="slide-image" src ={b2} width="860"height="499"  />  
+            <Image className="slide-image" src ={b2} alt="banner1" width="860"height="499"  />  
           </div>
           <div className="slide-container">
-            <Image className="slide-image" src={b2} width="860"height="499" />  
+            <Image className="slide-image" src={b2} alt="banner2" width="860"height="499" />  
           </div>
           <div className="slide-container">
-            <Image className="slide-image" src={b2} width="860"height="499" />
+            <Image className="slide-image" src={b2} alt="banner3" width="860"height="499" />
           </div>
           
         </Slider>
