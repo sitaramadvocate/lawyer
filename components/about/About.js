@@ -9,7 +9,7 @@ const About=()=>{
                     </div>
                     <div className="col-md-6">
                     <div className="pl-0 pl-lg-3 pl-xl-5">   
-                    <div class="d-grid gap-3">
+                    <div className="d-grid gap-3">
 
                     <div className="p-2 bg-white border">Grid item 1</div>
                     <div className="p-2 bg-white border">Grid item 2</div>
