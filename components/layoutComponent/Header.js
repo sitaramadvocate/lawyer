@@ -1,5 +1,7 @@
 import { Navbar,Nav,Container } from "react-bootstrap";
 import Image from 'next/dist/client/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser,faSearch } from '@fortawesome/free-solid-svg-icons'
 
 const Header=()=>{
     return(<>
@@ -15,9 +17,13 @@ const Header=()=>{
                
                 </Nav>
                 <Nav>
-                <Nav.Link href="#deets"><i class="fas fa-search"></i></Nav.Link>
+                <Nav.Link href="#deets">
+                <FontAwesomeIcon icon={faSearch} className="text-white"/>
+
+               </Nav.Link>
                 <Nav.Link eventKey={2} href="#memes">
-                <i class="fal fa-user text-white"></i>
+                <FontAwesomeIcon icon={faUser} className="text-white"/>
+
                 </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
