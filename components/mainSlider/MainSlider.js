@@ -5,7 +5,8 @@ import Image from "next/dist/client/image";
 import  '../../styles/Home.module.css'
 import NextArrow from "./NextArrow";
 import PrevArrow from "./PrevArrow";
-import b2 from "../../public/assets/images/banners/b2.jpeg"
+import b2 from "../../public/assets/images/banners/b3.png"
+import { Card } from "react-bootstrap";
 const MainSlider=()=>{
 
     const settings = {
@@ -58,15 +59,72 @@ const MainSlider=()=>{
         <div className="home-slider">
           <Slider {...settings}>
           <div className="slide-container">
-            <Image className="slide-image" src ={b2} alt="banner1" width="860"height="499"  />  
+         
+           
+            <Card className="bg-dark text-white">
+            <Image className="slide-image" src ={b2} alt="banner1" width="860"height="500"  />
+              <Card.ImgOverlay>
+                <Card.Title></Card.Title>
+                <Card.Text>
+                 
+                 </Card.Text>
+                <Card.Text></Card.Text>
+              </Card.ImgOverlay>
+            </Card>
+                
           </div>
+    
           <div className="slide-container">
-            <Image className="slide-image" src={b2} alt="banner2" width="860"height="499" />  
+         
+           
+         <Card className="bg-dark text-white">
+         <Image className="slide-image" src ={b2} alt="banner1" width="860"height="500"  />
+           <Card.ImgOverlay>
+             <Card.Title></Card.Title>
+             <Card.Text>
+              
+              </Card.Text>
+             <Card.Text></Card.Text>
+           </Card.ImgOverlay>
+         </Card>
+             
+       </div>
+      
+
+       <div className="slide-container">
+         
+           
+            <Card className="bg-dark text-white">
+            <Image className="slide-image" src ={b2} alt="banner1" width="860"height="500"  />
+              <Card.ImgOverlay>
+                <Card.Title></Card.Title>
+                <Card.Text>
+                 
+                 </Card.Text>
+                <Card.Text></Card.Text>
+              </Card.ImgOverlay>
+            </Card>
+                
           </div>
+         
+
           <div className="slide-container">
-            <Image className="slide-image" src={b2} alt="banner3" width="860"height="499" />
+         
+           
+            <Card className="bg-dark text-white">
+            <Image className="slide-image" src ={b2} alt="banner1" width="860"height="500"  />
+              <Card.ImgOverlay>
+                <Card.Title></Card.Title>
+                <Card.Text>
+                 
+                 </Card.Text>
+                <Card.Text></Card.Text>
+              </Card.ImgOverlay>
+            </Card>
+                
           </div>
-          
+    
+        
         </Slider>
       </div>
             

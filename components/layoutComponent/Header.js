@@ -1,32 +1,28 @@
+import { Navbar,Nav,Container } from "react-bootstrap";
+import Image from 'next/dist/client/image';
+
 const Header=()=>{
     return(<>
           <header>
-              
-          <nav className="navbar fixed-top navbar-dark header-bg">
-           <div className="container-fluid">
-                <a className="navbar-brand" href="#">Sitaram Yadav</a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse"id="navbarText">
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li className="nav-item">
-                    <a className="nav-link" href="#">Link</a>
-                    </li>
-                    <li className="nav-item">
-                    <a className="nav-link disabled" href="#" tabIndex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-                <form className="d-flex">
-                    <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                    <button className="btn btn-outline-success" type="submit">Search</button>
-                </form>
-                </div>
-            </div>
-           </nav>
+          <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Container fluid>
+            <Navbar.Brand href="#home">
+             <Image src="/logo/logo1.png" alt="logo" width={160} height={50}/>
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+                <Nav className="me-auto">
+               
+                </Nav>
+                <Nav>
+                <Nav.Link href="#deets"><i class="fas fa-search"></i></Nav.Link>
+                <Nav.Link eventKey={2} href="#memes">
+                <i class="fal fa-user text-white"></i>
+                </Nav.Link>
+                </Nav>
+            </Navbar.Collapse>
+            </Container>
+         </Navbar> 
           </header>
          
           </>)

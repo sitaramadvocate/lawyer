@@ -1,28 +1,26 @@
 import Image from "next/dist/client/image";
-//import aboutImage from '../../public/assets/images/banners/about.webp'
+import { Col, Container, Row } from "react-bootstrap";
+import aboutImage from '../../public/assets/images/banners/about.png'
 const About=()=>{
     return(<>
-            <div className="container-fluid">
-                <div className="row">
-                    <div className="col-md-6">
-                      <Image src="/assets/images/banners/about.webp" alt="about" width="450"height="400"/>
-                    </div>
-                    <div className="col-md-6">
-                    <div className="pl-0 pl-lg-3 pl-xl-5">   
-                    <div className="d-grid gap-3">
-
-                    <div className="p-2 bg-white border">Grid item 1</div>
-                    <div className="p-2 bg-white border">Grid item 2</div>
-                    <div className="p-2 bg-white border">Grid item 3</div>
-                    <div className="p-2 bg-white border">Grid item 1</div>
-                    <div className="p-2 bg-white border">Grid item 2</div>
-                    <div className="p-2 bg-white border">Grid item 3</div>
-
-                    </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
+            <Container>
+                <Row>
+                    <Col md={6}>
+                      <div className="about-image-container">
+                       <Image src={aboutImage} width="400"height="400" />
+                      </div>
+                    </Col>
+                    
+                    <Col md={6}>
+                       <div className="about-text-container">
+                          <h1>Sitaram Yadav</h1>
+                           <p>
+                             Sitaram Yadav is an indian Advocate. He has completed his Master in Law from Oriental University,Indore. He practising in  the Damoh District Court .
+                           </p>
+                       </div>
+                    </Col>
+                </Row>
+            </Container>
            </>
         )
 }
